@@ -1,0 +1,18 @@
+
+GET http://localhost:8080/listmessages HTTP/1.1
+
+### 
+GET http://localhost:8080/users HTTP/1.1
+
+### 
+GET http://localhost:8080/user/1 HTTP/1.1
+
+###
+POST http://localhost:8080/sendmessage HTTP/1.1
+content-type: application/json
+
+{
+    "sender": "+13136376855",
+    "receiver": "+917037414934",
+    "message":"Hi. Your OTP is :780231"
+}
