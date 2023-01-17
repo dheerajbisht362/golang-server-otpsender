@@ -26,12 +26,12 @@ func main() {
 	router.GET("/user/:id", getUserId)
 	router.POST("/sendmessage", sendMessage)
 	router.GET("/listmessages", listMessages)
-	router.Run("localhost:8080")
+	router.Run()
 }
 
 var users = []User{{Id: 0, First_name: "Mayank", Last_name: "Sonu", Phone_number: "+917037414934"},
 	{Id: 1, First_name: "Chetan", Last_name: "Rana", Phone_number: "+917037414934"},
-	{Id: 3, First_name: "Zeeshan", Last_name: "", Phone_number: "+917037414934"},
+	{Id: 3, First_name: "Zeeshan", Last_name: "Zama", Phone_number: "+917037414934"},
 }
 
 type User struct {
